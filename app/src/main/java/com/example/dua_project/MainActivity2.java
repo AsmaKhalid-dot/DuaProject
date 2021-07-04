@@ -14,48 +14,35 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         pdfView=(PDFView)findViewById(R.id.opener);
         String getitem=getIntent().getStringExtra("pdfFileNames");
-        if(getitem.equals("Quran Prhny ki Dua"))
+        if(getitem.equals("سوتے وقت کی دعا"))
         {
-            pdfView.fromAsset("A.pdf").load();
+            pdfView.fromAsset("Soty waqt.pdf").load();
         }
-        else if(getitem.equals("Wazu sy pehly ki Dua"))
+        else if(getitem.equals("نیند سے بیدار ہونے کی دعا"))
         {
-            pdfView.fromAsset("B.pdf").load();
+            pdfView.fromAsset("So kr uthny ki dua.pdf").load();
         }
-        else if(getitem.equals("Masjid mein any ki Dua"))
+        else if(getitem.equals("نیا چاند دیکھنے کی دعا"))
         {
-            pdfView.fromAsset("C.pdf").load();
+            pdfView.fromAsset("Naya chand dekhny ki dua.pdf").load();
         }
-        else if(getitem.equals("Masjid sy nikalny ki Dua"))
+        else if(getitem.equals("بیت الخلاء میں داخل ہونے سے پہلے کی دعا"))
         {
-            pdfView.fromAsset("D.pdf").load();
+            pdfView.fromAsset("Bait ul khala ki dua.pdf").load();
         }
-        else if(getitem.equals("Ghr sy nikalny ki Dua"))
+        else if(getitem.equals("سفر شروع کرنے کی دعا"))
         {
-            pdfView.fromAsset("E.pdf").load();
+            pdfView.fromAsset("Safar shuru krny ki dua.pdf").load();
         }
-        else if(getitem.equals("Khana khany sy phly ki dua")) {
-            pdfView.fromAsset("F.pdf").load();
+        else if(getitem.equals("گھر سے نکلنے کی دعا")) {
+            pdfView.fromAsset("Gar sy niklty waqt ki dua.pdf").load();
         }
-        else if(getitem.equals("Khana khany k bad ki dua"))
+        else if(getitem.equals("مصیبت آئے تو یہ دعا"))
         {
-            pdfView.fromAsset("G.pdf").load();
+            pdfView.fromAsset("musibat k waqt ki dua.pdf").load();
         }
-        else if(getitem.equals("Sehri ki dua"))
-        {
-            pdfView.fromAsset("H.pdf").load();
-        }
-        else if(getitem.equals("Aftar ki dua"))
-        {
-            pdfView.fromAsset("I.pdf").load();
-        }
-        else if(getitem.equals("Chenk any ki dua"))
-        {
-            pdfView.fromAsset("J.pdf").load();
-        }
-        else if(getitem.equals("Ilam mein azafe ki dua"))
-        {
-            pdfView.fromAsset("K.pdf").load();
+        else if(getitem.equals("جنازہ دیکھنے کی دعا")) {
+            pdfView.fromAsset("janazah dekhty waqt ki dua.pdf").load();
         }
     }
 }
