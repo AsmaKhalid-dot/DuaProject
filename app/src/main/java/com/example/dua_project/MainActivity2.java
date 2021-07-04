@@ -2,6 +2,7 @@ package com.example.dua_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 
@@ -9,6 +10,7 @@ import com.github.barteksc.pdfviewer.PDFView;
 
 public class MainActivity2 extends AppCompatActivity {
     PDFView pdfView;
+    MediaPlayer med;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +46,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void Pause(View view) {
-        
+
     }
 
     public void Play(View view) {
