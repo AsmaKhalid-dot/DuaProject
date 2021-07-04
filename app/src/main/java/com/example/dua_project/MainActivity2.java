@@ -14,9 +14,13 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         pdfView=(PDFView)findViewById(R.id.opener);
         String getitem=getIntent().getStringExtra("pdfFileNames");
-        if(getitem.equals("Pehla Kalma"))
+        if(getitem.equals("Quran Prhny ki Dua"))
         {
-            pdfView.fromAsset("1 kalima.pdf").load();
+            pdfView.fromAsset("A.pdf").load();
+        }
+        else if(getitem.equals("Dusra Kalma"))
+        {
+            pdfView.fromAsset("2 kalima.pdf").load();
         }
     }
 }
