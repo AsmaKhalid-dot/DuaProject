@@ -3,6 +3,7 @@ package com.example.dua_project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
@@ -30,19 +31,22 @@ public class MainActivity2 extends AppCompatActivity {
         {
             pdfView.fromAsset("Bait ul khala ki dua.pdf").load();
         }
-        else if(getitem.equals("سفر شروع کرنے کی دعا"))
+        else if(getitem.equals("گھر میں داخل ہونے کی دعا"))
         {
-            pdfView.fromAsset("Safar shuru krny ki dua.pdf").load();
+            pdfView.fromAsset("ghr mein dakhil hony ki dua.pdf").load();
         }
         else if(getitem.equals("گھر سے نکلنے کی دعا")) {
             pdfView.fromAsset("Gar sy niklty waqt ki dua.pdf").load();
         }
-        else if(getitem.equals("مصیبت آئے تو یہ دعا"))
-        {
+        else if(getitem.equals("مصیبت آئے تو یہ دعا")) {
             pdfView.fromAsset("musibat k waqt ki dua.pdf").load();
         }
-        else if(getitem.equals("جنازہ دیکھنے کی دعا")) {
-            pdfView.fromAsset("janazah dekhty waqt ki dua.pdf").load();
-        }
+    }
+
+    public void Pause(View view) {
+        
+    }
+
+    public void Play(View view) {
     }
 }
