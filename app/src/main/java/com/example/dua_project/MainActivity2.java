@@ -20,35 +20,43 @@ public class MainActivity2 extends AppCompatActivity {
         if(getitem.equals("سوتے وقت کی دعا"))
         {
             pdfView.fromAsset("Soty waqt.pdf").load();
+            med=MediaPlayer.create(this,R.raw.s);
         }
         else if(getitem.equals("نیند سے بیدار ہونے کی دعا"))
         {
             pdfView.fromAsset("So kr uthny ki dua.pdf").load();
+            med=MediaPlayer.create(this,R.raw.b);
         }
         else if(getitem.equals("نیا چاند دیکھنے کی دعا"))
         {
             pdfView.fromAsset("Naya chand dekhny ki dua.pdf").load();
+            med=MediaPlayer.create(this,R.raw.c);
         }
         else if(getitem.equals("بیت الخلاء میں داخل ہونے سے پہلے کی دعا"))
         {
             pdfView.fromAsset("Bait ul khala ki dua.pdf").load();
+            med=MediaPlayer.create(this,R.raw.z);
         }
         else if(getitem.equals("گھر میں داخل ہونے کی دعا"))
         {
             pdfView.fromAsset("ghr mein dakhil hony ki dua.pdf").load();
+            med=MediaPlayer.create(this,R.raw.d);
         }
         else if(getitem.equals("گھر سے نکلنے کی دعا")) {
             pdfView.fromAsset("Gar sy niklty waqt ki dua.pdf").load();
+            med=MediaPlayer.create(this,R.raw.o);
         }
         else if(getitem.equals("مصیبت آئے تو یہ دعا")) {
             pdfView.fromAsset("musibat k waqt ki dua.pdf").load();
+            med=MediaPlayer.create(this,R.raw.m);
         }
     }
 
     public void Pause(View view) {
-
+        med.pause();
     }
 
     public void Play(View view) {
+        med.start();
     }
 }
