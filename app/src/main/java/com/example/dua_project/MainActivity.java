@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listview = findViewById(R.id.dua);
-        String[] pdfFileNames = {"Quran Prhny ki Dua", "Wazu sy pehly ki Dua", "Masjid mein any ki Dua", "Masjid sy nikalny ki Dua", "Ghr sy nikalny ki Dua", "Khana khany sy phly ki dua","Khana khany k bad ki dua","Sehri ki dua","Aftar ki dua","Chenk any ki dua","Ilam mein azafe ki dua",""};
+        String[] pdfFileNames = {"Quran Prhny ki Dua", "Wazu sy pehly ki Dua", "Masjid mein any ki Dua", "Masjid sy nikalny ki Dua", "Ghr sy nikalny ki Dua", "Khana khany sy phly ki dua","Khana khany k bad ki dua","Sehri ki dua","Aftar ki dua","Chenk any ki dua","Ilam mein azafe ki dua"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, pdfFileNames) {
             @NonNull
             @Override
